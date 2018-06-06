@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Volume : MonoBehaviour {
 
+    //At the moment all this does it change the sprite image as there are no sounds in the game yet
+
     public Sprite volumeOff;
     public Sprite volumeOn;
     public bool volume = false;

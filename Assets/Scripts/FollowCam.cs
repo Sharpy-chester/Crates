@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 public class FollowCam : MonoBehaviour {
 
+    //This is only enabled on level 2 and keeps the camera centered on the player.
+
     public GameObject player;
     private Transform startPos;
 
-	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         startPos = this.gameObject.transform;
 	}
 	
-	// Update is called once per frame
 	void Update () {
-
         Follow();
 	}
 

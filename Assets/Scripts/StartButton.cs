@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour {
 
+    //Should create a single script called SceneManager instead of having a script for each button.
+
     public Object level1;
 
     void OnMouseDown()

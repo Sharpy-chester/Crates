@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CrateSpawn : MonoBehaviour {
 
+    //This is a script for spawning the crates and managing the players lives
 
     public float time;
     public float spawnTime;
