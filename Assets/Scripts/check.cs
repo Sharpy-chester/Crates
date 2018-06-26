@@ -11,6 +11,7 @@ public class check : MonoBehaviour
     public InputField address;
     public Button checkBTN;
     public Text amount;
+    //If you want to create a scene with this, simply create an input field, button, and text object and plug them into the corrosponding variables in the inspector
 
     void Start()
     {
@@ -20,9 +21,9 @@ public class check : MonoBehaviour
     void OnClick()
     {
         amount.text = ("Balance: Loading...");
-        string verge = address.text;
+        string verge = address.text; //The variable Verge is what the user inputs into the text box (input field). This will be a Verge address.
         Debug.Log(verge);
-        string url = "https://verge-blockchain.info/ext/getbalance/" + verge; //D6a8ayKEpdj71qh6b1iLxYEXxMX9KfbggD
+        string url = "https://verge-blockchain.info/ext/getbalance/" + verge; //D6a8ayKEpdj71qh6b1iLxYEXxMX9KfbggD - Example address
         WWW website = new WWW(url);
         StartCoroutine(WaitForRequest(website));
     }
